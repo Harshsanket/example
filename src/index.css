@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 body{
     background-image: url(./assets/bg1.jpg);
     background-position: center;
@@ -7,7 +13,7 @@ body{
     margin: 0;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 50vh;
     align-items: center;
 }
 .clock-container{
@@ -19,7 +25,46 @@ body{
 color: black;
 font-size: 6rem;
 font-weight: bold;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
 text-align: center;
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar-container {
+    width: 50vw;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: rgb(50, 165, 50);
+    transition: all .5s ease;
+}
+.progress-year-text, .progress-month-time, .progress-week-time {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    margin: 2vh auto 0 auto;
+    
+}
+.progress-day-time{
+    display: flex;
+    align-items: center;
+}
+.progress-year-text p{
+    flex: 1;
+}
+.progress-day-time p, .progress-month-time p, .progress-week-time p{
+    flex: 1;
+}
+.progress-day{
+    width: 50vw;
+    margin: 15vh auto 0 auto;
 }
